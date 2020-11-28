@@ -6,8 +6,6 @@ __credits__ = "https://github.com/amnona/dbbact-calour/graphs/contributors"
 __version__ = "2020.10.03"
 __version_numeric__ = 2020.1003
 
-from .dbbact import DBBact
-
 # load the logger config
 try:
 	# get the logger config file location
@@ -29,5 +27,3 @@ try:
 		logger.setLevel(calour_log_level)
 except:
 	print('calour module not found for log level setting. Level not set')
-
-__all__ = ['DBBact']
